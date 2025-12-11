@@ -14,7 +14,7 @@ public class P48 {
 
         public void run() {
             for (int i = 0; i < t; i++) {
-                System.out.println(c);
+                System.out.print(c);
                 try {
                     Thread.sleep(10);
                 } catch (Exception e) {

@@ -27,11 +27,11 @@ public class P50 {
 
     public static void main(String[] args) {
         LinkedList<S> L = new LinkedList<>();
-        L.add(new S(1, "Alice", 80, 70));
-        L.add(new S(2, "Bob", 60, 65));
+        L.add(new S(1, "Dhruvil", 80, 70));
+        L.add(new S(2, "Manan", 60, 65));
         L.add(new S(3, "Chirag", 88, 92));
         System.out.println("All: " + L);
-        String q = args.length > 0 ? args[0] : "Bob";
+        String q = args.length > 0 ? args[0] : "Dhruvil";
         L.stream().filter(s -> s.name.equalsIgnoreCase(q)).forEach(System.out::println);
     }
 }

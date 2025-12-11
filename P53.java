@@ -25,9 +25,9 @@ public class P53 {
 
     public static void main(String[] args) {
         LinkedList<S> L = new LinkedList<>();
-        L.add(new S(1, "Zara", 70));
-        L.add(new S(2, "Alan", 60));
-        L.add(new S(3, "Bob", 80));
+        L.add(new S(1, "Chirag", 70));
+        L.add(new S(2, "Dhruvil", 60));
+        L.add(new S(3, "Arman", 80));
         System.out.println("Before: " + L);
         L.sort(Comparator.comparing(s -> s.name));
         System.out.println("After: " + L);

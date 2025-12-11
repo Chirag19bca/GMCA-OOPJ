@@ -14,7 +14,7 @@ public class P46 {
 
         public void run() {
             try {
-                while (true) {
+                for (int i = 0; i < 5; i++) {
                     System.out.println(m);
                     Thread.sleep(t);
                 }
