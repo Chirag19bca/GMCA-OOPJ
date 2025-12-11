@@ -1,22 +1,9 @@
-import java.io.File;
-import java.util.Scanner;
-
+// 38	Write a java program to checks the existence of a specified file. (classic I/O)
+import java.io.*;
 public class P38 {
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter file name (with path if not in current folder): ");
-        String fileName = sc.nextLine();
-
-        File file = new File(fileName);
-
-        if (file.exists()) {
-            System.out.println("File exists.");
-        } else {
-            System.out.println("File does NOT exist.");
-        }
-
-        sc.close();
+        String path = args.length>0? args[0] : "t36.txt";
+        File f = new File(path);
+        System.out.println(path + " exists? " + f.exists());
     }
 }
